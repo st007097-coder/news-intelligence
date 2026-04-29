@@ -1,0 +1,27 @@
+# News Intelligence - RSS Feeds Configuration
+
+feeds:
+  - name: HackerNews AI
+    url: https://hnrss.org/newest?q=AI%20OR%20machine%20learning%20OR%20GPT%20OR%20LLM&count=20
+    enabled: true
+    priority: high
+
+  - name: MIT Tech Review
+    url: https://www.technologyreview.com/feed/
+    enabled: true
+    priority: medium
+
+  - name: TechCrunch AI
+    url: https://techcrunch.com/tag/artificial-intelligence/feed/
+    enabled: true
+    priority: medium
+
+  - name: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    enabled: true
+    priority: medium
+
+  - name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/technology-lab
+    enabled: true
+    priority: low
