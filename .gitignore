@@ -11,3 +11,6 @@ cache/*.bak
 # Output files (optional)
 output/*.txt
 output/*.md
+
+# Archived skills (moved here, not for git tracking)
+skills/*.archive/
