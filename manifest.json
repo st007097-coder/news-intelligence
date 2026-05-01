@@ -1,0 +1,34 @@
+{
+  "name": "news-intelligence",
+  "version": "2.0.0",
+  "description": "智能資訊收集、分析、去重、總結系統。整合 RSS + Tavily + X Accounts 三個來源，自動每日生成 AI 新聞摘要。",
+  "owner": "阿星 (main agent)",
+  "updated_at": "2026-05-01",
+  "review_cadence": "monthly",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "production",
+  "tags": ["news", "ai", "rss", "tavily", "x-accounts", "aggregator"],
+  "skill_type": "content_aggregation",
+  "evals": {
+    "trigger_cases": 6,
+    "last_run": "2026-05-01"
+  },
+  "constraints": {
+    "no_x_api": true,
+    "tavily_optional": true,
+    "github_excluded": ["tavily_config.json", "*.json"]
+  },
+  "regression_history": [
+    {
+      "date": "2026-05-01",
+      "version": "2.0.0",
+      "changes": "Added X Account integration, unified pipeline"
+    },
+    {
+      "date": "2026-04-29",
+      "version": "1.0.0",
+      "changes": "Initial version with RSS + Tavily"
+    }
+  ]
+}

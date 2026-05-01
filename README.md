@@ -1,15 +1,19 @@
 # News Intelligence System
 ## OCM Sup 之外第2個 Project — 智能資訊收集、分析、去重、總結
 
-**Version:** 2.0
+**Version:** 2.0.0
 **Date:** 2026-05-01
 **Author:** 阿星
-**Status:** ✅ **Complete**
+**Status:** ✅ **Complete + Optimized**
 
 ## 🆕 v2.0 Update (2026-05-01)
 - Added X Account scanning (via Google search, NOT X API)
 - Integrated AI influencer content
 - Unified pipeline: RSS + Tavily + X Accounts
+- **Added SKILL.md** with triggers, workflow, checkpoints
+- **Added evals/** with trigger cases and semantic config
+- **Added governance/** with owner and review cadence
+- **Added tests/** with 8 automated tests (all passing)
 
 ---
 

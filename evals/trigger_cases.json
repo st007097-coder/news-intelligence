@@ -1,0 +1,62 @@
+{
+  "recommended_threshold": 0.33,
+  "should_trigger": [
+    {
+      "text": "AI 新聞",
+      "family": "news_request",
+      "expected": "生成 AI/科技新聞摘要"
+    },
+    {
+      "text": "今日資訊",
+      "family": "news_request",
+      "expected": "獲取今日最新資訊"
+    },
+    {
+      "text": "News Intelligence",
+      "family": "news_request",
+      "expected": "啟動完整收集流程"
+    },
+    {
+      "text": "新聞摘要",
+      "family": "news_request",
+      "expected": "生成每日摘要"
+    },
+    {
+      "text": "最新 AI 動態",
+      "family": "news_request",
+      "expected": "獲取最近 AI 動態"
+    },
+    {
+      "text": "我想要每日 AI 新聞",
+      "family": "news_request",
+      "expected": "設置或獲取每日 AI 新聞"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "創建一個新技能",
+      "family": "skill_creation",
+      "reason": "這是 skill creation，不是 news"
+    },
+    {
+      "text": "天氣怎麼樣",
+      "family": "weather",
+      "reason": "天氣查詢，不是新聞"
+    },
+    {
+      "text": "幫我寫代碼",
+      "family": "coding",
+      "reason": "編程任務，不是新聞"
+    },
+    {
+      "text": "生成圖片",
+      "family": "image_gen",
+      "reason": "圖片生成，不是新聞"
+    },
+    {
+      "text": "分析我的預算",
+      "family": "finance",
+      "reason": "財務分析，不是新聞"
+    }
+  ]
+}

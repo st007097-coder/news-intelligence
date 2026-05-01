@@ -1,0 +1,70 @@
+{
+  "recommended_threshold": 0.33,
+  "fallback_positive_concepts": [
+    "ai_news",
+    "daily_info",
+    "tech_summary"
+  ],
+  "positive_concepts": {
+    "news_request": {
+      "weight": 0.40,
+      "phrases": [
+        "AI 新聞",
+        "今日資訊",
+        "新聞摘要",
+        "每日資訊",
+        "最新 AI 動態",
+        "news intelligence",
+        "資訊收集"
+      ]
+    },
+    "tech_news": {
+      "weight": 0.25,
+      "phrases": [
+        "科技新聞",
+        "技術動態",
+        "AI 動態"
+      ]
+    },
+    "summary_request": {
+      "weight": 0.20,
+      "phrases": [
+        "總結",
+        "摘要",
+        "簡報",
+        "digest"
+      ]
+    },
+    "fresh_news": {
+      "weight": 0.15,
+      "phrases": [
+        "最新",
+        "今日",
+        "最近",
+        "新鮮"
+      ]
+    }
+  },
+  "negative_concepts": {
+    "weather": {
+      "weight": -0.5,
+      "phrases": ["天氣", "weather", "溫度"]
+    },
+    "coding": {
+      "weight": -0.5,
+      "phrases": ["代碼", "code", "編程", "python"]
+    },
+    "image_gen": {
+      "weight": -0.5,
+      "phrases": ["圖片", "image", "生成圖片"]
+    },
+    "skill_creation": {
+      "weight": -0.4,
+      "phrases": ["創建技能", "新建 skill", "create skill"]
+    },
+    "finance": {
+      "weight": -0.3,
+      "phrases": ["預算", "成本", "報價"]
+    }
+  }
+}
