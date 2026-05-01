@@ -1,23 +1,13 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-.venv/
+# Sensitive files
+sources/tavily_config.json
+sources/*_config.json
+*api_key*
+*.env
 
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Project specific (data files - don't commit cache)
+# Cache files
 cache/*.json
-!cache/.gitkeep
-output/daily/*.md
-output/brief_*.txt
+cache/*.bak
+
+# Output files (optional)
+output/*.txt
+output/*.md

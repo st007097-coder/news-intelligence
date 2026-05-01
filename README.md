@@ -1,10 +1,15 @@
 # News Intelligence System
 ## OCM Sup 之外第2個 Project — 智能資訊收集、分析、去重、總結
 
-**Version:** 1.0
-**Date:** 2026-04-29
+**Version:** 2.0
+**Date:** 2026-05-01
 **Author:** 阿星
 **Status:** ✅ **Complete**
+
+## 🆕 v2.0 Update (2026-05-01)
+- Added X Account scanning (via Google search, NOT X API)
+- Integrated AI influencer content
+- Unified pipeline: RSS + Tavily + X Accounts
 
 ---
 
@@ -20,7 +25,10 @@
 news-intelligence/
 ├── sources/              # 來源配置
 │   ├── rss_feeds.yaml    # RSS feeds 配置
-│   └── keywords.yaml     # 關鍵詞配置（用於評分）
+│   ├── keywords.yaml     # 關鍵詞配置（用於評分）
+│   ├── x_accounts/
+│   │   └── accounts.txt  # 65 AI 影響者帳號
+│   └── tavily_config.json # Tavily API 配置（不在 Git）
 ├── cache/                # 緩存
 │   ├── rolling_events.json   # Rolling 7-day 去重數據庫
 │   ├── unified_combined.json # Unified pipeline 結果
@@ -33,7 +41,9 @@ news-intelligence/
 │   ├── deduplicator.py       # Phase 2: Rolling 7-day 去重
 │   ├── scorer.py             # Phase 3: 興趣評分
 │   ├── daily_digest.py       # Phase 4: 每日總結生成
-│   └── unified_collector.py # Unified Pipeline (Tavily + RSS)
+│   ├── unified_collector.py # Unified Pipeline v2.0
+│   └── x_account_fetcher.py # X Account 掃描（新增）
+├── .gitignore            # 敏感文件排除
 └── README.md
 ```
 
